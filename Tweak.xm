@@ -70,6 +70,7 @@
 						customView.alpha = 0;
 					}
 					completion:^(BOOL finished) {
+						[customView removeFromSuperview];
 						[customView release];
 						[label release];
 					}];
@@ -127,6 +128,7 @@
 						customView.alpha = 0;
 					}
 					completion:^(BOOL finished) {
+						[customView removeFromSuperview];
 						[customView release];
 						[label release];
 					}];
