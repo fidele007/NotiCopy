@@ -104,8 +104,8 @@
 
 		// Add alert view to let users know the text is copied
 		CGSize screenSize = [UIScreen mainScreen].bounds.size;
-		UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(screenSize.width/2 - 80, self.frame.origin.y + self.frame.size.height, 160, 40)]; // (x - width/2) to center the view
 		[customView setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.7]];
+		UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(screenSize.width/2 - 80, self.frame.origin.y + self.frame.size.height/2 - 20, 160, 40)]; // (x - width/2) to center the view
 		customView.layer.cornerRadius = 10;
 		customView.userInteractionEnabled = NO;
 
